@@ -11,10 +11,8 @@ const DynamicMap = dynamic(() => import("@/components/Map").then((mod) => mod.Ma
 export default function Home() {
   return (
     <LocationProvider>
-      <div>
         <Infos />
         <DynamicMap />
-      </div>
     </LocationProvider>
   );
 }
