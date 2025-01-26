@@ -1,22 +1,19 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import L from "leaflet";
-import axios from "axios"
-import { Location } from "@/types/Location";
-import { InputIp } from "@/components/InputIp";
-import { MapInfo } from "@/components/MapInfo";
-import { Map } from "@/components/Map";
 import { LocationProvider } from "@/contexts/LocationContext";
 import { Infos } from "@/components/Infos";
+import dynamic from "next/dynamic";
+
+const DynamicMap = dynamic(() => import("@/components/Map").then((mod) => mod.Map), { 
+  ssr: false
+});
 
 export default function Home() {
-
   return (
     <LocationProvider>
       <div>
         <Infos />
-        <Map />
+        <DynamicMap />
       </div>
     </LocationProvider>
   );
