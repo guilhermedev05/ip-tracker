@@ -32,7 +32,8 @@ export const Map = () => {
 
             var marker = L.marker([32.69922, -117.11281]).addTo(mapRef.current);
             var markerImg = marker.getElement()
-            if (markerImg) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
+
+            if (markerImg instanceof HTMLImageElement && markerImg != undefined ) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
 
             mapRef.current?.on('click', onMapClick);
             if (locationCtx?.ipLocation) {
@@ -43,7 +44,7 @@ export const Map = () => {
                 marker = L.marker([locationCtx.ipLocation.location.lat, locationCtx.ipLocation.location.lng]).addTo(mapRef.current)
                 markerImg = marker.getElement()
 
-                if (markerImg) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
+                if (markerImg instanceof HTMLImageElement && markerImg != undefined ) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
 
             } else if(locationCtx?.hasSearched && !locationCtx.ipLocation){
 
@@ -51,7 +52,7 @@ export const Map = () => {
                 marker = L.marker([oldLat, oldLng]).addTo(mapRef.current)
                 markerImg = marker.getElement()
                 
-                if (markerImg) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
+                if (markerImg instanceof HTMLImageElement && markerImg != undefined ) markerImg.src = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'
             }
         }
 
