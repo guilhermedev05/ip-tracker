@@ -46,8 +46,8 @@ export const InputIp = () => {
 
     return (
         <div className="flex w-full max-w-md">
-            <input type="text" placeholder="Search for any IP Adress or domain" value={inputIp} onChange={e => setInputIp(e.target.value)} className="bg-white p-3 rounded-xl text-black rounded-se-none rounded-ee-none w-full outline-none focus:shadow focus:shadow-gray-500 transition-all duration-200 ease-in" />
-            <div onClick={handleGetLocation} className="bg-black w-12 flex items-center justify-center rounded-xl rounded-ss-none rounded-es-none cursor-pointer outline-none hover:bg-gray-700 transition-all ease-in duration-100" >
+            <input type="text" placeholder="Search for any IP Adress or domain" value={inputIp} onChange={e => setInputIp(e.target.value)} className="bg-white py-2.5 px-4 md:p-4 rounded-xl text-black rounded-se-none rounded-ee-none w-full outline-none focus:shadow focus:shadow-gray-500 transition-all duration-200 ease-in" />
+            <div onClick={handleGetLocation} className="bg-black w-12 md:w-16 flex items-center justify-center rounded-xl rounded-ss-none rounded-es-none cursor-pointer outline-none hover:bg-gray-700 transition-all ease-in duration-100" >
                 <img src="/assets/images/icon-arrow.svg" alt="" />
             </div>
         </div>
