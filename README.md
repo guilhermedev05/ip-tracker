@@ -114,6 +114,3 @@ Contribuições são sempre bem-vindas! Caso queira melhorar ou adicionar funcio
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
 
 ---
-
-**Desenvolvido com ❤️ por [Guilherme Santana](https://github.com/guilhermedev05).**  
-```
