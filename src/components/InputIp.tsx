@@ -23,6 +23,7 @@ export const InputIp = () => {
             }finally{
                 locationCtx?.setIsLoading(false)
                 locationCtx?.setHasSearched(true)
+                setInputIp('')
             }
         }
 
@@ -40,6 +41,7 @@ export const InputIp = () => {
         } finally {
             locationCtx?.setIsLoading(false)
             locationCtx?.setHasSearched(true)
+            setInputIp('')
         }
 
     }
