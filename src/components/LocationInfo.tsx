@@ -48,7 +48,7 @@ export const LocationInfo = () => {
         {locationCtx?.isLoading && <Spinner />}
         {locationCtx?.hasSearched && !locationCtx?.ipLocation && !locationCtx.isLoading && (
           <div
-            className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 
+            className="absolute left-1/2 top-[100%] -translate-x-1/2 -translate-y-1/2 
                        flex flex-col items-center bg-white w-full max-w-[267px] md:w-[80%] 
                        md:max-w-5xl py-5 text-center rounded-lg shadow-md z-50"
           >
