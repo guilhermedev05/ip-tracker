@@ -98,8 +98,8 @@ Bem-vindo ao **IP Tracker**! Este projeto é uma aplicação web que permite ras
 
 ## 🖼 Demonstração  
 
-![Demonstração da Aplicação - Mobile](https://i.imgur.com/leNA1Yn.png)
-![Demonstração da Aplicação - Desktop](https://i.imgur.com/msjVlUX.png)
+![Demonstração da Aplicação - Mobile](https://i.imgur.com/Qgv7z6r.png)
+![Demonstração da Aplicação - Desktop](https://i.imgur.com/CdchF4X.png)
 
 ---
 
